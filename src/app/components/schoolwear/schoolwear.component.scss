@@ -1,0 +1,23 @@
+.mainContainer {
+
+}
+
+.headLineContainer {
+    text-align: center;
+    color: white;
+}
+
+.schoolwearImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+}

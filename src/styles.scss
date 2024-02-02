@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+    background-color: #198fa9;
+}
+
+// This style content is for the image sliders on the hompage
+.imageSliderContainer {
+    padding: 25px 15%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.carousel {
+    color: white;
+    max-width: 1000px;
+}
+
+.carousel-item {
+    // max-height: 600px;
+}
+
+.headlineContainer {
+    position: relative;
+    z-index: 99;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+
+    h2 {
+        color: black;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "Arial", sans-serif;
+        margin: 0;
+    }
+}
+
+.carousel-inner {
+    // height: 650px;
+
+    img {
+        // max-height: 500px;
+        // object-fit: cover;
+    }
+}
+
+.imageInfo {
+    position: relative;
+    z-index: 99;
+
+    span {
+        width: 100%;
+        color: #f0f0f0;
+        display: block; 
+        background-color: #333844;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
