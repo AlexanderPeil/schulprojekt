@@ -3,10 +3,10 @@
 }
 
 .scrollUp {
- position: fixed;
- right: 15px;
- bottom: 90px;
- cursor: pointer;   
+    position: fixed;
+    right: 15px;
+    bottom: 90px;
+    cursor: pointer;
 }
 
 .swagBg {
@@ -20,4 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: url(../../../assets/img/swag_bg.webp) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
 }
