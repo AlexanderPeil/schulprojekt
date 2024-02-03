@@ -32,3 +32,14 @@
     background-size: cover;
     opacity: 0.5;
 }
+
+.topSection {
+    width: 100%;
+    // opacity: 0.8;
+
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}

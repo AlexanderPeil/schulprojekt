@@ -1,12 +1,38 @@
-.bgImage {
-    background-attachment: fixed;
+.homeMainContainer {
+    display: flex;
+    flex-direction: column;
 }
+
+// .bgImage {
+//     background-attachment: fixed;
+// }
 
 .scrollUp {
     position: fixed;
     right: 15px;
     bottom: 90px;
     cursor: pointer;
+}
+
+.topSectionContainer {
+    color: white;
+    padding: 25px 15%;
+    // background: linear-gradient(to right, #2c2c2c, #444444);
+    background: linear-gradient(to right, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    h1 {
+        margin: 0;
+        color: #f0f0f0; 
+        text-shadow: 2px 2px 4px #000000; /* Schwarz für mehr Tiefe */
+    }
+}
+
+.contactContainer {
+    text-align: center;
 }
 
 .swagBg {
