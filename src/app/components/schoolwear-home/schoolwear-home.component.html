@@ -1,13 +1,13 @@
 <div class="imageSliderContainer">
-    <div id="schoolwearHomeComponent" class="carousel slide" data-bs-ride="carousel">
+    <div id="schoolwearHomeComponent" class="carousel slide" data-bs-ride="">
         <div class="headlineContainer">
             <h2>Unsere Schulkleidung</h2>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let image of sliderImages; let isFirst = first" [class.active]="isFirst">
-                <!-- <a href="#"> -->
-                    <img [src]="image.src" class="d-block w-100">
-                <!-- </a> -->
+                <a href="#">
+                    <img [src]="image.src" class="">
+                </a>
                 <div class="imageInfo">
                     <span>{{ image.text }}</span>
                 </div>
