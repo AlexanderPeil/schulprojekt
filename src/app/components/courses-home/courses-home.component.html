@@ -4,7 +4,7 @@
             <h2>Unsere Smartphone Kurse</h2>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item" *ngFor="let image of sliderImages; let isFirst = first" [class.active]="isFirst">
+            <div class="carousel-item" data-bs-interval="3000"  *ngFor="let image of sliderImages; let isFirst = first" [class.active]="isFirst">
                 <a href="#">
                     <img [src]="image.src" class="d-block w-100" alt="...">
                 </a>

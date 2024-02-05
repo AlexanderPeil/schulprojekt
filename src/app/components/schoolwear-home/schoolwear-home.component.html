@@ -4,10 +4,13 @@
             <h2>Unsere Schulkleidung</h2>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item" *ngFor="let image of sliderImages; let isFirst = first" [class.active]="isFirst">
-                <a href="#">
-                    <img [src]="image.src" class="">
-                </a>
+            <div class="carousel-item" data-bs-interval="3000" *ngFor="let image of sliderImages; let isFirst = first"
+                [class.active]="isFirst">
+                <div class="imageContainer">
+                    <a href="#">
+                        <img [src]="image.src" class="">
+                    </a>
+                </div>
                 <div class="imageInfo">
                     <span>{{ image.text }}</span>
                 </div>
@@ -23,5 +26,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+    <div class="imageSliderBottomContent">
+        <p>
+            Schaut euch unseren gesamten Katalog an. Hier ist für jeden was dabei.
+        </p>
     </div>
 </div>

@@ -1,6 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+@import "app/shared/variables.scss";
+
 body {
     // background-color: #198fa9;
     // background-color: #5F5F5F;
@@ -15,17 +17,17 @@ body {
     // padding: 25px 15%;
     margin: 25px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     opacity: 0.85;
 }
 
 .carousel {
     color: white;
-    max-width: 1000px;
+    @include max_width_1200;
 }
 
 .carousel-item {
-    // max-height: 600px;
 }
 
 .headlineContainer {
@@ -46,12 +48,15 @@ body {
 
 .carousel-inner {
     // height: 650px;
+}
+
+.imageContainer {
+    height: 800px;
 
     img {
-        object-position: center;
         object-fit: cover;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -62,10 +67,17 @@ body {
     span {
         width: 100%;
         color: #f0f0f0;
-        display: block; 
+        display: block;
         background-color: #333844;
         padding: 20px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+}
+
+.imageSliderBottomContent {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: white;
 }
