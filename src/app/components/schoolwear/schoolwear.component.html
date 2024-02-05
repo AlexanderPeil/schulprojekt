@@ -4,39 +4,13 @@
     </div>
 
     <div class="schoolwearImageContainer">
-
-        <div>
-            <img src="assets/img/slider_img1.jpg" alt="Schulkleidung">
+        <div class="schoolwearBlock" *ngFor="let image of sliderImages">
+            <img [src]="image.src" alt="Kleidung Bild">
+            <a href="#">
+                <span>{{ image.text }}</span>
+                <span>{{ image.price }}</span>
+            </a>
         </div>
-
-        <div>
-            <img src="assets/img/slider_img2.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/slider_img3.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/slider_img4.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/phone_1.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/phone_2.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/phone_3.jpg" alt="Schulkleidung">
-        </div>
-
-        <div>
-            <img src="assets/img/phone_4.jpg" alt="Schulkleidung">
-        </div>
-
     </div>
 
 </div>

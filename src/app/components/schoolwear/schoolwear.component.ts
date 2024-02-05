@@ -11,41 +11,49 @@ export class SchoolwearComponent {
     {
       src: 'assets/img/phone_1.jpg',
       text: 'Sehr schönes Stück',
+      price: '10,50 Euro',
       link: '#'
     },
     {
       src: 'assets/img/phone_2.jpg',
       text: 'Aus unserer Sommer-Kollektion',
+      price: '999,99 Euro',
       link: '#'
     },
     {
       src: 'assets/img/phone_3.jpg',
       text: 'Gerade im Super-Spar-Angebot',
+      price: '25,00 Euro',
       link: '#'
     },
     {
       src: 'assets/img/phone_4.jpg',
       text: 'Der letzte Schrei',
+      price: '15,80 Euro',
       link: '#'
     },
     {
       src: 'assets/img/slider_img1.jpg',
-      text: 'Zum Sonderangebot',
+      text: 'T-Shirts Mädels',
+      price: '5,50 Euro',
       link: '#'
     },
     {
       src: 'assets/img/slider_img2.jpg',
-      text: 'Zum Sonderangebot',
+      text: 'T-Shirts Männer',
+      price: '12,00 Euro',
       link: '#'
     },
     {
       src: 'assets/img/slider_img3.jpg',
-      text: 'Zum Sonderangebot',
+      text: 'Pulli Männer',
+      price: '10,50 Euro',
       link: '#'
     },
     {
       src: 'assets/img/slider_img4.jpg',
-      text: 'Zum Sonderangebot',
+      text: 'Pulli Frauen',
+      price: '12,9 Euro',
       link: '#'
     },
   ]
