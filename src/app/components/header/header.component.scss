@@ -1,5 +1,7 @@
+@import '../../shared/variables.scss';
+
 .navbar {
-    background-color: rgba(25, 143, 169, 1);
+    background-color: $defaultBg;
     height: 70px;
 }
 

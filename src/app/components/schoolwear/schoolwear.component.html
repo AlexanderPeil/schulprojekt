@@ -1,15 +1,29 @@
 <div class="mainContainer">
-    <div class="headLineContainer">
-        <h1>Schulkleidung</h1>
+    <div class="topSectionImage">
+        <!-- <img src="assets/img/swag_team.png" alt="SWAG Team Image"> -->
     </div>
 
-    <div class="schoolwearImageContainer">
-        <div class="schoolwearBlock" *ngFor="let image of sliderImages">
-            <img [src]="image.src" alt="Kleidung Bild">
-            <a href="#">
-                <span>{{ image.text }}</span>
-                <span>{{ image.price }}</span>
-            </a>
+    <div class="address">
+        <span>Otto-Hahn-Str. 7 | 77933 Lahr/Schwarzwald | 07821 - 123456 | info@deine-email.de</span>
+        <span class="currentRoute">
+            <a class="linkStyle" href="">Startseite</a>
+             / Schulkleidung
+        </span>
+    </div>
+
+    <div class="mainContent">
+        <div class="headLineContainer">
+            <h1>Schulkleidung</h1>
+        </div>
+
+        <div class="schoolwearImageContainer">
+            <div class="schoolwearBlock" *ngFor="let image of sliderImages">
+                <img [src]="image.src" alt="Kleidung Bild">
+                <a href="#">
+                    <span>{{ image.text }}</span>
+                    <span>{{ image.price }}</span>
+                </a>
+            </div>
         </div>
     </div>
 

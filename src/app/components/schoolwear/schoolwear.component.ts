@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SliderImage } from 'src/app/shared/image-interface';
 
 @Component({
@@ -6,7 +7,12 @@ import { SliderImage } from 'src/app/shared/image-interface';
   templateUrl: './schoolwear.component.html',
   styleUrls: ['./schoolwear.component.scss']
 })
-export class SchoolwearComponent {
+export class SchoolwearComponent implements OnInit {
+
+  ngOnInit(): void  {
+
+  }
+
   sliderImages: SliderImage[] = [
     {
       src: 'assets/img/phone_1.jpg',

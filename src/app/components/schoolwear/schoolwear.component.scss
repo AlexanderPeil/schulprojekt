@@ -1,31 +1,49 @@
-.mainContainer {
+@import "../../shared/variables.scss";
 
+.mainContainer {
+    @include d_flex_column($g: 50px);
+    @include opacity;
+}
+
+.topSectionImage {
+    @include width_height(100%, 600px);
+    background: url(../../../assets/img/swag_team.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.address {
+    @include d_flex_column;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.mainContent {
+    @include max_width_1200;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .headLineContainer {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .schoolwearImageContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    @include d_flex($g: 50px);
     flex-wrap: wrap;
     padding: 20px;
 
     img {
-        height: 500px;
-        width: 500px;
+        @include width_height(500px, 500px);
         object-fit: cover;
         border-radius: 10px;
     }
 }
 
 .schoolwearBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.85;
+    @include d_flex_column;
+    @include opacity;
 }

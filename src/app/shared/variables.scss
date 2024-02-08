@@ -1,3 +1,48 @@
 @mixin max_width_1200 {
     max-width: 1200px;
 }
+
+@mixin opacity {
+    opacity: 0.85;
+}
+
+@mixin fonts($s, $w) {
+    font-size: $s;
+    font-weight: $w;
+}
+
+@mixin width_height($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+// @mixin margin($ml, $mr) {
+//     margin-left: $ml;
+//     margin-right: $mr;
+// }
+
+// @mixin padding($pl, $pr) {
+//     padding-left: $pl;
+//     padding-right: $pr;
+// }
+
+@mixin button_hover {
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+@mixin d_flex($jc:center, $ai:center, $g:0) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+@mixin d_flex_column($g:0) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $g;
+}
+
+$defaultBg: #198fa9;

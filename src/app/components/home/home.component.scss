@@ -1,14 +1,8 @@
 @import "../../shared/variables.scss";
 
 .homeMainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include d_flex_column;
 }
-
-// .bgImage {
-//     background-attachment: fixed;
-// }
 
 .scrollUp {
     position: fixed;
@@ -18,25 +12,18 @@
 }
 
 .topSectionContainer {
+    @include d_flex;
+    @include opacity;
     padding: 20px 50px;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(to right, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.2));
     color: white;
-    opacity: 0.85;
     @include max_width_1200;
     border-radius: 10px;
     margin: 50px 0 50px 0;
-    // background-color: white;
-    // color: black;
-    // background: linear-gradient(to right, #2c2c2c, #444444);
 }
 
 .topSectionContent {
-    // color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include d_flex_column;
     gap: 15px;
 
     h1 {
@@ -51,16 +38,13 @@
 }
 
 .swagBg {
+    @include width_height(100vww, 100vh);
+    @include d_flex;
     position: fixed;
     top: 0;
     right: 0;
     z-index: -1;
-    height: 100vh;
-    width: 100vw;
     font-size: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     background: url(../../../assets/img/swag_bg.webp) no-repeat center;
     background-size: cover;
@@ -68,8 +52,6 @@
 }
 
 .topSectionImages {
-    // width: 620px;
-    // height: 265px;
     text-align: center;
 
     img {
@@ -77,8 +59,4 @@
         height: auto;
         box-sizing: border-box;
     }
-
-    // em {
-    //     color: #d05;
-    // }
 }

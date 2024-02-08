@@ -6,7 +6,7 @@
 body {
     // background-color: #198fa9;
     // background-color: #5F5F5F;
-    background-color: #198fa9;
+    background-color: $defaultBg;
     // background: url(assets/img/swag_bg.webp);
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -14,12 +14,10 @@ body {
 
 // This style content is for the image sliders on the hompage
 .imageSliderContainer {
+    @include d_flex_column;
+    @include opacity;
     // padding: 25px 15%;
     margin: 25px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.85;
 }
 
 .carousel {
@@ -54,9 +52,8 @@ body {
     height: 800px;
 
     img {
+        @include width_height(100%, auto);
         object-fit: cover;
-        width: 100%;
-        height: auto;
     }
 }
 
@@ -80,4 +77,18 @@ body {
     height: 50px;
     padding: 20px;
     background-color: white;
+}
+
+//  This style is global for all components
+.currentRoute {
+    margin-right: auto;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
