@@ -1,0 +1,45 @@
+@import "../../shared/variables.scss";
+
+main {
+    @include d_flex_column($g: 50px);
+}
+
+.topSectionImage {
+    @include width_height(100%, 600px);
+    background: url(../../../assets/img/smartphonekurs.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.mainContent {
+    @include opacity;
+    @include d_flex_column;
+}
+
+.courseContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+    &:nth-child(even) { // Zugriff auf jedes zweite Element
+        flex-direction: row-reverse; // Umkehrung der Reihenfolge für gerade Elemente
+      }
+}
+
+.courseDescritpion {
+    @include d_flex_column;
+    padding-top: 20px
+}
+
+.coursesImageContainer {
+    @include d_flex_column;
+    // color: #f1592a;
+    padding: 20px;
+
+    
+    img {
+        @include width_height(400px, 400px);
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

@@ -1,1 +1,37 @@
-<p>courses works!</p>
+<main>
+
+    <div class="topSectionImage">
+        <!-- <img src="assets/img/swag_team.png" alt="SWAG Team Image"> -->
+    </div>
+
+
+    <div class="address">
+        <span>Otto-Hahn-Str. 7 | 77933 Lahr/Schwarzwald | 07821 - 123456 | info@deine-email.de</span>
+        <span class="currentRoute">
+            <a class="linkStyle" href="/home">Startseite</a>
+            / Smartphone Kurse
+        </span>
+    </div>
+
+    <div class="mainContent">
+
+        <div class="courseContainer" *ngFor="let course of courses">
+            <div class="courseDescritpion">
+                <strong>
+                    <span>{{ course.headline }}</span>
+                </strong>
+                <p>
+                    {{ course.text }}
+                </p>
+            </div>
+
+            <div class="coursesImageContainer">
+                <img [src]="course.src" alt="Smartphone Kurs Bild">
+            </div>
+        </div>
+
+    </div>
+
+    <img src="assets/img/arrow_up.png" class="scrollUp" (click)="scrollToTop($event)">
+
+</main>

@@ -11,22 +11,6 @@ main {
     background-position: 50% 50%;
 }
 
-.address {
-    @include d_flex_column;
-    max-width: 1200px;
-    width: 100%;
-    color: white;
-    font-weight: bold;
-}
-
-.mainContent {
-    @include max_width_1200;
-    @include opacity;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
 .headLineContainer {
     // text-align: center;
     color: black;

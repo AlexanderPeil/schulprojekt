@@ -81,6 +81,28 @@ body {
     background-color: white;
 }
 
+
+
+// This a generally style is for schoolwear and courses componen
+
+.mainContent {
+    @include max_width_1200;
+    @include opacity;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.address {
+    @include d_flex_column;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+
+
 //  This style is global for all components
 .currentRoute {
     margin-right: auto;
@@ -104,6 +126,6 @@ body {
 .scrollUp {
     position: fixed;
     right: 15px;
-    bottom: 20px;
+    bottom: 85px;
     cursor: pointer;
 }
