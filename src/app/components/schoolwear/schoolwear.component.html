@@ -1,4 +1,4 @@
-<div class="mainContainer">
+<main>
     <div class="topSectionImage">
         <!-- <img src="assets/img/swag_team.png" alt="SWAG Team Image"> -->
     </div>
@@ -6,25 +6,39 @@
     <div class="address">
         <span>Otto-Hahn-Str. 7 | 77933 Lahr/Schwarzwald | 07821 - 123456 | info@deine-email.de</span>
         <span class="currentRoute">
-            <a class="linkStyle" href="">Startseite</a>
-             / Schulkleidung
+            <a class="linkStyle" href="/home">Startseite</a>
+            / Schulkleidung
         </span>
     </div>
 
     <div class="mainContent">
         <div class="headLineContainer">
-            <h1>Schulkleidung</h1>
+            <h2 class="headlineDefault">Schulkleidung</h2>
+            <p>
+                <span>
+                    <strong>Die Schulkleidung ist wieder da!</strong>
+                </span>
+            </p>
+            <p>Liebe Schulgemeinschaft,</p>
+            <p>
+                auch dieses Jahr gibt es wieder Schulkleidung zu kaufen. Dieses Mal mit mehr Auswahl an Farben und
+                Produkten, sogar online bestellbar. Im Folgenden finden Sie die jeweiligen Links zu Ihrem gewünschten
+                Artikel. Als Alternative gibt es Bestellformulare auf Papier im Sekretäriat.
+            </p>
+            <p>
+                Einfach auf das Produkt klicken und bestellen!
+            </p>
         </div>
 
         <div class="schoolwearImageContainer">
-            <div class="schoolwearBlock" *ngFor="let image of sliderImages">
-                <img [src]="image.src" alt="Kleidung Bild">
-                <a href="#">
+            <a href="#">
+                <div class="schoolwearBlock" *ngFor="let image of sliderImages">
+                    <img [src]="image.src" alt="Kleidung Bild">
                     <span>{{ image.text }}</span>
                     <span>{{ image.price }}</span>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
-
-</div>
+    <img src="assets/img/arrow_up.png" class="scrollUp" (click)="scrollToTop($event)">
+</main>

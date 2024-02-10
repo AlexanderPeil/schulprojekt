@@ -4,13 +4,6 @@
     @include d_flex_column;
 }
 
-.scrollUp {
-    position: fixed;
-    right: 15px;
-    bottom: 20px;
-    cursor: pointer;
-}
-
 .topSectionContainer {
     @include d_flex;
     @include opacity;

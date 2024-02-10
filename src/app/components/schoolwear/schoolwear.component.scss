@@ -1,8 +1,7 @@
 @import "../../shared/variables.scss";
 
-.mainContainer {
+main {
     @include d_flex_column($g: 50px);
-    @include opacity;
 }
 
 .topSectionImage {
@@ -22,13 +21,19 @@
 
 .mainContent {
     @include max_width_1200;
+    @include opacity;
     background-color: white;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .headLineContainer {
-    text-align: center;
+    // text-align: center;
     color: black;
+
+    h2 {
+        padding-bottom: 10px;
+    }
 }
 
 .schoolwearImageContainer {
@@ -36,8 +41,21 @@
     flex-wrap: wrap;
     padding: 20px;
 
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: #f7941e;
+
+            span {
+                color: #f7941e;
+            }
+        }
+    }
+
     img {
-        @include width_height(500px, 500px);
+        @include width_height(400px, 400px);
         object-fit: cover;
         border-radius: 10px;
     }
@@ -46,4 +64,6 @@
 .schoolwearBlock {
     @include d_flex_column;
     @include opacity;
+    color: #f1592a;
+    padding: 20px;
 }

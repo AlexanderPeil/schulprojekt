@@ -9,7 +9,7 @@ import { SliderImage } from 'src/app/shared/image-interface';
 })
 export class SchoolwearComponent implements OnInit {
 
-  ngOnInit(): void  {
+  ngOnInit(): void {
 
   }
 
@@ -62,5 +62,12 @@ export class SchoolwearComponent implements OnInit {
       price: '12,9 Euro',
       link: '#'
     },
-  ]
+  ];
+
+
+  scrollToTop(event: Event) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+
 }
