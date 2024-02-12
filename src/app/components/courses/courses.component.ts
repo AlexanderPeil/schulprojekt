@@ -12,7 +12,7 @@ export class CoursesComponent {
     {
       src: 'assets/img/phone_1.jpg',
       headline: 'Smartphone Kurs 1',
-      text: 'Das war unser letzter Kurs',
+      text: 'Das war unser letzter Kurs. Der war der absolute Hammer und es habe nsehr viele Leute mitgemacht.',
       link: '#'
     },
     {

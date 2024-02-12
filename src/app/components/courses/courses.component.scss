@@ -12,7 +12,7 @@ main {
 }
 
 .mainContent {
-    @include opacity;
+    // @include opacity;
     @include d_flex_column;
 }
 
@@ -20,6 +20,12 @@ main {
     display: flex;
     flex-direction: row;
     padding: 20px;
+    width: 100%;
+
+    div {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 
     &:nth-child(even) { // Zugriff auf jedes zweite Element
         flex-direction: row-reverse; // Umkehrung der Reihenfolge für gerade Elemente
@@ -38,7 +44,9 @@ main {
 
     
     img {
-        @include width_height(400px, 400px);
+        // @include width_height(400px, 400px);
+        max-width: 100%;
+        height: auto;
         object-fit: cover;
         border-radius: 10px;
     }

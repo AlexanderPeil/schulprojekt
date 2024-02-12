@@ -1,5 +1,12 @@
 @import "../../shared/variables.scss";
 
+.topSectionImage {
+    @include width_height(100%, 600px);
+    background: url(../../../assets/img/scheffel_logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 .homeMainContainer {
     @include d_flex_column;
 }
